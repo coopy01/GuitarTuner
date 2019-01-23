@@ -1,9 +1,7 @@
-# GuitarTuner
-simple bot that uses LUIS to accept a letter of the six string guitar by voice, returning the frequency for tuning your guitar.
-
 Built for Bot Framework 3.x in 2018 so things will definitely be outdated.
 
-Welcome to my voice activated Guitar Tuner project. This uses Azure, LUIS, and Bot Framework to enable Cortana to understand the 6 strings of the guitar and play the frequency. If you search the project for files that contain TODO" you'll see where you  need to change things.
+Welcome to my voice activated Guitar Tuner project. This uses Azure, LUIS, and Bot Framework to enable Cortana to understand the 6 strings of the guitar and play the frequency. If you search the project for files that contain 
+TODO" you'll see where you  need to change things.
 
 1. Update project keys with your own. 
 	a. LUIS Model
@@ -20,9 +18,7 @@ Welcome to my voice activated Guitar Tuner project. This uses Azure, LUIS, and B
 Note: The main dialog is RootLuisDialog.cs, AppId is configured in Web.config.
 
 Note:
-String frequencies of standard tuning String 	Frequency 	Scientific 
-
-pitch notation
+String frequencies of standard tuning String 	Frequency 	Scientific pitch notation
 1 (E) 	329.63 Hz 	E4
 2 (B) 	246.94 Hz 	B3
 3 (G) 	196.00 Hz 	G3
