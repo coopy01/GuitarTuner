@@ -4,7 +4,8 @@ Welcome to my voice activated Guitar Tuner project. This uses Azure, LUIS,
 
 and Bot Framework to enable Cortana to understand the 6 strings of the guitar 
 
-and play the frequency.
+and play the frequency. If you search the project for files that contain 
+TODO" you'll see where you  need to change things.
 
 1. Update project keys with your own. 
 	a. LUIS Model
@@ -35,3 +36,17 @@ changes. Use the Nuget package Manager to get the latest.
 Note: The main dialog is RootLuisDialog.cs, AppId is configured in 
 
 Web.config.
+
+Note:
+String frequencies of standard tuning String 	Frequency 	Scientific 
+
+pitch notation
+1 (E) 	329.63 Hz 	E4
+2 (B) 	246.94 Hz 	B3
+3 (G) 	196.00 Hz 	G3
+4 (D) 	146.83 Hz 	D3
+5 (A) 	110.00 Hz 	A2
+6 (E) 	82.41 Hz 	E2
+
+Note:
+I just used a simple online tone generator and uploaded the files to AWS S3.
