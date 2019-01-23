@@ -1,4 +1,4 @@
-﻿namespace LuisBot.Dialogs
+namespace LuisBot.Dialogs
 {
     using System;
     using System.Collections.Generic;
@@ -17,14 +17,14 @@
 
     [Serializable]
     
-    [LuisModel("8edbb9b2-5986-4407-8c23-e95b2fae3321", "8857f5d6c0ca447180caea6cc2fe2f99")]
+    [LuisModel("[TODO: input Id of LUIS App]", "[TODO: input Password of LUIS App]")]
     public class RootLuisDialog : LuisDialog<object>
     {
        
         /// <summary>
         /// Need to override the LuisDialog.MessageReceived method so that we can detect when the user invokes the skill without
         /// specifying a phrase, for example: "Open <invocation>", or "Ask <invocation>". In these cases, the message received will be an empty string.
-        /// JRW 5/25 I would much prefer that the inltentless launch be handled explicitly rather than implicitly through the message 
+        /// I would much prefer that the inltentless launch be handled explicitly rather than implicitly through the message 
         /// equals emtpy string method. Currently unable to implement this to my satisfaction so leaving this kludge in place
         /// </summary>
         /// <param name="context"></param>
@@ -154,7 +154,7 @@
             message.Attachments = new List<Attachment>(){
                 new HeroCard("Which one do you want?", "Make a selection", "low e, a, d, g, b, or high e", new List<CardImage>()
                 {
-                    new CardImage() { Url = "https://rangerarmoryb3b0.blob.core.windows.net/bot/QuestionBlock.gif", Alt = "Hero Card Image Alt" }
+                    new CardImage() { Url = "", Alt = "Hero Card Image Alt" }
                 }, new List<CardAction>()
                 {
                     new CardAction("openUrl", "Reference Document", null, "https://docs.microsoft.com/en-us/cortana/design-guides/card-design-best-practices")
@@ -188,7 +188,7 @@
                 {
                     new MediaUrl()
                     {
-                        Url = "https://rangerarmoryb3b0.blob.core.windows.net/guitartuner/E%20Low%2082.41.wav"
+                        Url = "[TODO: Link to public location of your Low E tone. 82.41 Hz]"
                     }
                 },null, true, true, true, null).ToAttachment()
             };
@@ -204,7 +204,7 @@
                 {
                     new MediaUrl()
                     {
-                        Url = "https://rangerarmoryb3b0.blob.core.windows.net/guitartuner/A%20110.00.wav"
+                        Url = "[TODO: Link to public location of your A tone. 110.00 Hz]"
                     }
                 },null, true, true, true, null).ToAttachment()
             };
@@ -220,7 +220,7 @@
                 {
                     new MediaUrl()
                     {
-                        Url = "https://rangerarmoryb3b0.blob.core.windows.net/guitartuner/D%20146.83.wav"
+                        Url = "[TODO: Link to public location of your D tone. 146.83 Hz]"
                     }
                 },null, true, true, true, null).ToAttachment()
             };
@@ -236,7 +236,7 @@
                 {
                     new MediaUrl()
                     {
-                        Url = "https://rangerarmoryb3b0.blob.core.windows.net/guitartuner/G%20196.00.wav"
+                        Url = "[TODO: Link to public location of your G tone. 196.00 Hz]"
                     }
                 },null, true, true, true, null).ToAttachment()
             };
@@ -252,7 +252,7 @@
                 {
                     new MediaUrl()
                     {
-                        Url = "https://rangerarmoryb3b0.blob.core.windows.net/guitartuner/B%20246.94.wav"
+                        Url = "[TODO: Link to public location of your B tone. 246.94 Hz]"
                     }
                 },null, true, true, true, null).ToAttachment()
             };
@@ -268,7 +268,7 @@
                 {
                     new MediaUrl()
                     {
-                        Url = "https://rangerarmoryb3b0.blob.core.windows.net/guitartuner/E%20High%20329.63.wav"
+                        Url = "[TODO: Link to public location of your E tone. 329.63 Hz]"
                     }
                 },null, true, true, true, null).ToAttachment()
             };
