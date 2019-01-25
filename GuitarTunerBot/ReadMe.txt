@@ -5,7 +5,7 @@ Welcome to my voice activated Guitar Tuner project. This uses Azure, LUIS,
 and Bot Framework to enable Cortana to understand the 6 strings of the guitar 
 
 and play the frequency. If you search the project for files that contain 
-TODO" you'll see where you  need to change things.
+"TODO" you'll see where you  need to change things.
 
 1. Update project keys with your own. 
 	a. LUIS Model
